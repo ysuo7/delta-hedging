@@ -78,3 +78,6 @@ if st.button("Analyze"):
     # Display the hedging result
     st.write("## Delta Hedging Result")
     st.write(result)
+
+st.write("Technical support by")
+st.image("yasuo.png", width=200)
