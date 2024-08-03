@@ -2,6 +2,7 @@ import streamlit as st
 from datetime import datetime
 from delta_hedging_model import hedging
 import pandas as pd
+import base64
 
 st.set_page_config(
     page_title="friend.tech Dashboard",
@@ -9,10 +10,24 @@ st.set_page_config(
     layout="wide"
 )
 
-st.markdown("<h1 style='text-align: center; font-size: 100px;'>🥭🍍🍈🍉👑</h1>", unsafe_allow_html=True)
+def image_to_base64(image_path):
+    with open(image_path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode('utf-8')
 
-bowl_image_url = "kimchi.png"
-st.image(bowl_image_url, caption="Kimchi", width=150)
+# Convert the kimchi image to base64
+kimchi_image_path = "kimchi.png"  # Adjust path if needed
+kimchi_image_base64 = image_to_base64(kimchi_image_path)
+
+# HTML content for emojis and kimchi image
+html_content = f"""
+<div style='display: flex; justify-content: center; align-items: center; font-size: 100px;'>
+    <span>🥭🍍🍈🍉👑</span>
+    <img src='data:image/jpg;base64,{kimchi_image_base64}' alt='Kimchi' style='width: 100px; height: auto; margin-left: 10px;'/>
+</div>
+"""
+
+# Display the emojis and kimchi image in a single line
+st.markdown(html_content, unsafe_allow_html=True)
 
 # Input for stock name
 stock_name = st.text_input("Enter a stock name:")
