@@ -9,7 +9,9 @@ st.set_page_config(
     layout="wide"
 )
 
-st.markdown("<h1 style='text-align: center; font-size: 100px;'>🥭🍍🍈🫕🍉🦙</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; font-size: 100px;'>🥭🍍🍈🍉🤴</h1>", unsafe_allow_html=True)
+
+bowl_image_url = "kimchi.jpg"
 
 # Input for stock name
 stock_name = st.text_input("Enter a stock name:")
