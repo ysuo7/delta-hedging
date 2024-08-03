@@ -1,6 +1,7 @@
 import streamlit as st
 from datetime import datetime
 from delta_hedging_model import hedging
+import pandas as pd
 
 st.set_page_config(
     page_title="friend.tech Dashboard",
@@ -21,7 +22,7 @@ current_date = datetime.now()
 start_date = st.date_input(
     "Select the maturity start date:",
     value=current_date,
-    min_value='2023-01-01',
+    min_value=pd.to_datetime('2023-01-01'),
     max_value=current_date,
     key="start_date"
 )
