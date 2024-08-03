@@ -79,8 +79,12 @@ if st.button("Analyze"):
     st.write("## Delta Hedging Result")
     st.write(result)
 
-col_space, col_note, col_img = st.columns([0.7, 0.10, 0.10])
-with col_note:
-    st.write("Technical support by")
-with col_img:
-    st.image("yasuo.png", width=30)
+st.markdown(
+    """
+    <div style="display: flex; justify-content: flex-end; align-items: flex-end; height: 100px;">
+        <div style="margin-right: 10px; font-weight: bold;">Technical support by</div>
+        <img src="data:image/png;base64,{}" width="100">
+    </div>
+    """.format(base64.b64encode(open("yasuo.png", "rb").read()).decode()),
+    unsafe_allow_html=True
+)
