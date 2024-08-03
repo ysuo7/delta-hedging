@@ -5,7 +5,7 @@ import pandas as pd
 
 st.set_page_config(
     page_title="friend.tech Dashboard",
-    page_icon="🐇",
+    page_icon="🥭",
     layout="wide"
 )
 
