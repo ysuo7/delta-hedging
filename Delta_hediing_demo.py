@@ -10,18 +10,10 @@ st.set_page_config(
     layout="wide"
 )
 
-def image_to_base64(image_path):
-    with open(image_path, "rb") as img_file:
-        return base64.b64encode(img_file.read()).decode('utf-8')
-
-# Convert the kimchi image to base64
-kimchi_image_path = "kimchi.png"  # Adjust path if needed
-kimchi_image_base64 = image_to_base64(kimchi_image_path)
-
 # HTML content for emojis and kimchi image
 html_content = f"""
 <div style='display: flex; justify-content: center; align-items: center; font-size: 100px;'>
-    <span>🐷⛽</span>
+    <span>🍉🍉</span>
 </div>
 """
 
