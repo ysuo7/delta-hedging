@@ -10,15 +10,6 @@ st.set_page_config(
     layout="wide"
 )
 
-# HTML content for emojis and kimchi image
-html_content = f"""
-<div style='display: flex; justify-content: center; align-items: center; font-size: 100px;'>
-    <span>🍉🍉</span>
-</div>
-"""
-
-# Display the emojis and kimchi image in a single line
-st.markdown(html_content, unsafe_allow_html=True)
 
 # Input for stock name
 stock_name = st.text_input("Enter a stock name:")
@@ -71,7 +62,7 @@ with col4:
     st.write(end_date)
 
 # Button to trigger the hedging calculation
-if st.button("Analyze"):
+if st.button("🍉Analyze🍉"):
     # Call the hedging function when the button is clicked
     result = hedging(stock_name, start_date, end_date, strike_price)
     
