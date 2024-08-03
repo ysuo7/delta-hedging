@@ -13,7 +13,7 @@ st.set_page_config(
 # HTML content for emojis and kimchi image
 html_content = f"""
 <div style='display: flex; justify-content: center; align-items: center; font-size: 100px;'>
-    <span>🖕</span>
+    <span>🖕MMA🖕</span>
 </div>
 """
 
