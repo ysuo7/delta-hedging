@@ -21,8 +21,7 @@ kimchi_image_base64 = image_to_base64(kimchi_image_path)
 # HTML content for emojis and kimchi image
 html_content = f"""
 <div style='display: flex; justify-content: center; align-items: center; font-size: 100px;'>
-    <span>🥭🍍🍈🍉👑</span>
-    <img src='data:image/jpg;base64,{kimchi_image_base64}' alt='Kimchi' style='width: 100px; height: auto; margin-left: 10px;'/>
+    <span>🐷⛽</span>
 </div>
 """
 
