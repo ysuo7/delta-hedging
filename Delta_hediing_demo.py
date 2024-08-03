@@ -79,5 +79,8 @@ if st.button("Analyze"):
     st.write("## Delta Hedging Result")
     st.write(result)
 
-st.write("Technical support by")
-st.image("yasuo.png", width=200)
+col_space, col_note, col_img = st.columns([0.7, 0.15, 0.15])
+with col_note:
+    st.write("Technical support by")
+with col_img:
+    st.image("path/to/your/image.png", width=100)
