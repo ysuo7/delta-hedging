@@ -13,7 +13,7 @@ st.set_page_config(
 # HTML content for emojis and kimchi image
 html_content = f"""
 <div style='display: flex; justify-content: center; align-items: center; font-size: 100px;'>
-    <span>🍉🥭🍍🍈🍉</span>
+    <span>🍉🍉</span>
 </div>
 """
 
@@ -83,6 +83,7 @@ st.markdown(
     """
     <div style="display: flex; justify-content: flex-end; align-items: flex-end; height: 100px;">
         <div style="margin-right: 10px; font-weight: bold;">Technical support by</div>
+        🥭🍍🍈
         <img src="data:image/png;base64,{}" width="50">
     </div>
     """.format(base64.b64encode(open("yasuo.png", "rb").read()).decode()),
