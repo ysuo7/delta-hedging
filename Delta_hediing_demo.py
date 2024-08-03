@@ -83,4 +83,4 @@ col_space, col_note, col_img = st.columns([0.7, 0.15, 0.15])
 with col_note:
     st.write("Technical support by")
 with col_img:
-    st.image("yasuo.png", width=80)
+    st.image("yasuo.png", width=60)
